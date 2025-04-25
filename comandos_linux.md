@@ -13,7 +13,9 @@ opção que funciona com mais de um comando, exibe informações para ajuda no u
 
 ## `cat`  
 “concatenate”  
-além de concatenações, pode ser usado para mostrar conteúdo de um arquivo no terminal
+além de concatenações, pode ser usado para mostrar conteúdo de um arquivo no terminal   
+neste último caso de uso, é melhor para arquivos curtos, pois exibe todo o conteúdo do arquivo de uma vez, e não permite rolagem ou navegação    
+para arquivos longos e quando se deseja estas funcionalidades, é melhor usar `more` ou `less`
 
 ---
 
@@ -47,7 +49,16 @@ sai do modo super usuário e de algumas outras aplicações
 
 ## `help`  
 exibe lista de comandos e ferramentas do shell  
-interessante notar que são estes comandos que não funcionam acompanhados do `sudo`, porque alteram o estado do shell portanto, para serem executados por super usuário, é necessário elevar todo o shell primeiro
+interessante notar que são estes comandos que não funcionam acompanhados do `sudo`, porque alteram o estado do shell    
+portanto, para serem executados por super usuário, é necessário elevar todo o shell primeiro
+
+---
+
+## `less`
+"less is more"  
+nomeado a partir deste trocadilho, o comando é semelhante ao `cat`, pois exibe o conteúdo de um arquivo no terminal     
+é melhor para arquivos grandes, pois permite visualização interativa    
+é semelhante também ao `more`, sendo algo como uma versão modernizada do mesmo, pois permite voltar e avançar no texto, tem busca por regex, e aceita atalhos de navegação estilo vi
 
 ---
 
@@ -74,6 +85,12 @@ lista arquivos e diretórios com detalhes, incluindo permissões e proprietário
 ## `mkdir`  
 “make directory”  
 cria um novo diretório com o nome especificado
+
+---
+
+## `more`
+comando semelhante ao `cat` e ao `less`, para exibir conteúdo de um arquivo no terminal     
+é um meio termo entre estes comandos acima, pois é melhor do que o `cat` para arquivos longos, porém é mais antigo e tem menos funcionalidades do que o `less`
 
 ---
 
