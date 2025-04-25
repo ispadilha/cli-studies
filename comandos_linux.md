@@ -12,7 +12,7 @@ opção que funciona com mais de um comando, exibe informações para ajuda no u
 ---
 
 ## `cat`  
-“concatenate”  
+"concatenate"  
 além de concatenações, pode ser usado para mostrar conteúdo de um arquivo no terminal   
 neste último caso de uso, é melhor para arquivos curtos, pois exibe todo o conteúdo do arquivo de uma vez, e não permite rolagem ou navegação    
 para arquivos longos e quando se deseja estas funcionalidades, é melhor usar `more` ou `less`
@@ -20,8 +20,8 @@ para arquivos longos e quando se deseja estas funcionalidades, é melhor usar `m
 ---
 
 ## `cd`  
-“change directory”  
-muda de diretório (“navega”) para o diretório especificado  
+"change directory"  
+muda de diretório ("navega") para o diretório especificado  
 quando usado sem especificar nenhum, volta para a home do usuário atual
 
 ---
@@ -32,7 +32,7 @@ limpa o terminal
 ---
 
 ## `cp`  
-“copy”  
+"copy"  
 copia arquivos e diretórios
 
 ---
@@ -54,6 +54,14 @@ portanto, para serem executados por super usuário, é necessário elevar todo o
 
 ---
 
+## `htop`
+"human-friendly top"    
+semelhante ao comando `top`, lista os processos no "topo" de uso dos recursos do sistema   
+é uma versão "modernizada" ou mais "amigável" quanto a sua interface gráfica    
+ao contrário do `top`, no entanto, nem sempre vem instalado com a distro, mas sua instalação é fácil e geralmente está nos repositórios oficiais 
+
+---
+
 ## `less`
 "less is more"  
 nomeado a partir deste trocadilho, o comando é semelhante ao `cat`, pois exibe o conteúdo de um arquivo no terminal     
@@ -63,27 +71,27 @@ nomeado a partir deste trocadilho, o comando é semelhante ao `cat`, pois exibe 
 ---
 
 ## `ls`  
-“list”  
+"list"  
 lista o conteúdo do diretório atual
 
 ### `ls -a`  
-“list all”  
+"list all"  
 lista todos os arquivos e diretórios no diretório atual, inclusive ocultos
 
 ### `ls -l`  
-“list long”  
+"list long"  
 lista arquivos e diretórios com detalhes, incluindo permissões e proprietários
 
 ---
 
 ## `man`  
-“manual”  
+"manual"  
 é usado seguido de outro comando e exibe manual de uso do mesmo
 
 ---
 
 ## `mkdir`  
-“make directory”  
+"make directory"  
 cria um novo diretório com o nome especificado
 
 ---
@@ -95,48 +103,56 @@ comando semelhante ao `cat` e ao `less`, para exibir conteúdo de um arquivo no 
 ---
 
 ## `mv`  
-“move”  
+"move"  
 move um arquivo ou diretório para outro diretório  
 caso não seja especificado outro diretório, renomeia no diretório atual
 
 ---
 
 ## `pwd`  
-“print working directory”  
+"print working directory"  
 imprime o caminho do diretório atual
 
 ---
 
 ## `rm`  
-“remove”  
+"remove"  
 remove arquivos ou diretórios com arquivos, sendo que para este último caso é necessário usar certos atributos
 
 ### `rm -f`  
-“remoção forçada”
+"remoção forçada"
 
 ### `rm -i`  
-“remoção interativa”  
+"remoção interativa"  
 solicita confirmação antes de efetivamente remover um arquivo ou diretório
 
 ### `rm -r`  
-“remover recursivamente”  
+"remover recursivamente"  
 usado para remover diretórios com arquivos
 
 ---
 
 ## `rmdir`  
-“remove directory”  
+"remove directory"  
 remove diretório vazio
 
 ---
 
 ## `sudo`  
-“super user do”  
-executa comando seguinte como super usuário (com permissão/”privilégios”)
+"super user do"  
+executa comando seguinte como super usuário (com permissão/"privilégios")
 
 ### `sudo -i` ou `sudo su`  
 inicia sessão como root (super usuário) no terminal  
 (para comandos que alteram o estado do terminal e não funcionam com sudo)
+
+---
+
+## `top`
+"top processes"     
+lista os processos que mais consomem recursos no momento, como processamento e memória  
+ou seja, ele mostra os processos que estão no topo da atividade do sistema  
+possui uma versão modernizada, o `htop`
 
 ---
 
