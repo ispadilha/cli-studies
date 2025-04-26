@@ -194,6 +194,20 @@ remove diretório vazio
 
 ---
 
+## `ssh`
+"secure shell"  
+permite conexão remota  
+para funcionar, é necessário que chaves estejam configuradas    
+ou seja, arquivos que contenham chaves criptográficas estejam nos locais (diretórios) corretos, ou corretamente referenciados, no servidor remoto (chave pública) e na máquina local (chave privada)   
+
+### `ssh -i`
+"secure shell identify"     
+precede as identificações necessárias para fazer a conexão remota   
+na máquina local, é o caminho para o arquivo com a chave privada    
+no servidor remoto, é usuário@endereço
+
+---
+
 ## `sudo`  
 "super user do"  
 executa comando seguinte como super usuário (com permissão/"privilégios")
