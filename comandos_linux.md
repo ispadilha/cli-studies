@@ -55,7 +55,7 @@ portanto, para serem executados por super usuário, é necessário elevar todo o
 ---
 
 ## `htop`
-"human-friendly top"    
+"human-friendly top processes"    
 semelhante ao comando `top`, lista os processos no "topo" de uso dos recursos do sistema   
 é uma versão "modernizada" ou mais "amigável" quanto a sua interface gráfica    
 ao contrário do `top`, no entanto, nem sempre vem instalado com a distro, mas sua instalação é fácil e geralmente está nos repositórios oficiais 
@@ -106,6 +106,33 @@ comando semelhante ao `cat` e ao `less`, para exibir conteúdo de um arquivo no 
 "move"  
 move um arquivo ou diretório para outro diretório  
 caso não seja especificado outro diretório, renomeia no diretório atual
+
+---
+
+## `ps`
+"process status"    
+exibe os processos em execução
+
+### `ps aux`
+"process status auxiliary"  
+exibe processos em execução de forma mais ampla, abrangendo processos em mais estados no momento da execução do comando, e mais colunas de informações
+
+### `ps aux --sort`
+exibe os processos em execução, ordenados por um parâmetro especificado
+
+### `ps -u`
+"process status of user"    
+exibe os processos em execução de um determinado usuário especificado
+
+### `ps -C`
+"process status of command"     
+exibe informações referentes a um determinado processo em execução, especificado pelo nome de seu comando
+
+---
+
+## `pstree`
+"process status tree"   
+semelhante ao `ps`, também exibe processos em execução, mas de forma esquematizada em uma árvore
 
 ---
 
