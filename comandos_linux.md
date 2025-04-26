@@ -69,6 +69,11 @@ portanto, para serem executados por super usuário, é necessário elevar todo o
 
 ---
 
+## `history`
+exibe o histórico de comandos executados no terminal
+
+---
+
 ## `htop`
 "human-friendly top processes"    
 semelhante ao comando `top`, lista os processos no "topo" de uso dos recursos do sistema   
