@@ -70,6 +70,21 @@ ao contrário do `top`, no entanto, nem sempre vem instalado com a distro, mas s
 
 ---
 
+## `kill`
+como o nome sugere, "mata" (encerra imediatamente) um processo  
+usa-se seguido do devido PID (process ID), que pode ser consultado com o comando `ps aux` por exemplo
+
+### `kill -STOP`
+faz um determinado processo parar   
+é possível retomar a execução depois, dependendo do processo
+
+### `kill -9`
+mata um processo de forma abrupta   
+com isso, o processo não tem tempo de salvar informações, liberar memória, etc      
+isso é indesejado, portanto usar apenas se necessário
+
+---
+
 ## `less`
 "less is more"  
 nomeado a partir deste trocadilho, o comando é semelhante ao `cat`, pois exibe o conteúdo de um arquivo no terminal     
@@ -114,6 +129,12 @@ comando semelhante ao `cat` e ao `less`, para exibir conteúdo de um arquivo no 
 "move"  
 move um arquivo ou diretório para outro diretório  
 caso não seja especificado outro diretório, renomeia no diretório atual
+
+---
+
+## `pkill`
+"process kill"  
+semelhante ao `kill`, mas se especifica o nome do processo, ao invés de seu PID
 
 ---
 
@@ -201,3 +222,10 @@ possui uma versão modernizada, o `htop`
 
 ## `touch`  
 cria um novo arquivo com o nome especificado
+
+---
+
+## `xkill`
+semelhante a `kill` e `pkill`, também se destina a matar processos, porém é usado em ambiente gráfico   
+após se emitir o comando, deve-se clicar na janela do referido processo     
+portanto, ela precisa estar vísivel
