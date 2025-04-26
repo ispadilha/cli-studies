@@ -47,6 +47,14 @@ sai do modo super usuário e de algumas outras aplicações
 
 ---
 
+## `head`
+exibe as primeiras linhas de um arquivo, sendo que por padrão exibe 10
+
+### `head -n`
+exibe as "n" primeiras linhas de um arquivo, em número especificado
+
+---
+
 ## `help`  
 exibe lista de comandos e ferramentas do shell  
 interessante notar que são estes comandos que não funcionam acompanhados do `sudo`, porque alteram o estado do shell    
@@ -172,6 +180,14 @@ executa comando seguinte como super usuário (com permissão/"privilégios")
 ### `sudo -i` ou `sudo su`  
 inicia sessão como root (super usuário) no terminal  
 (para comandos que alteram o estado do terminal e não funcionam com sudo)
+
+---
+
+## `tail`
+exibe as últimas linhas de um arquivo, sendo que por padrão exibe 10
+
+### `tail -n`
+exibe as "n" últimas linhas de um arquivo, em número especificado
 
 ---
 
