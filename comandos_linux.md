@@ -26,6 +26,13 @@ quando usado sem especificar nenhum, volta para a home do usuário atual
 
 ---
 
+## `chmod`
+"change mode"   
+altera modos de permissões de arquivos  
+é seguido do novo modo de permissões, e depois do caminho do arquivo
+
+---
+
 ## `clear`  
 limpa o terminal
 
