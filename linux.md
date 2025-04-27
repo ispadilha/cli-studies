@@ -1,8 +1,6 @@
 # Comandos de terminal Linux
 
-Este não é um material qualquer, copiado e colado de algum lugar. Trata-se de um compilado de comandos já usados e estudados por mim, e existe para fixação do aprendizado e possibilidade de consulta.
-
-_Esta lista é um trabalho em eterno progresso..._
+Lista feita e estudada em Ubuntu, talvez separe em novas listas por distros, futuramente
 
 ---
 

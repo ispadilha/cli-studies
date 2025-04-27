@@ -1,6 +1,6 @@
 # Comandos de terminal Git
 
-Compilado de comandos já usados e estudados por mim, para fixação do aprendizado e possibilidade de consulta.
+Lembrar que vários comandos podem ser substituídos por funcionalidades de IDEs, mas é importante conhecer e praticar os comandos em si
 
 ---
 
@@ -186,7 +186,7 @@ desfaz commits, e limpa o stage e o diretório de trabalho
 ---
 
 ## `git restore`
-restaura arquivos para o estado do último commit    
+restaura arquivos para o estado do último commit sincronizado   
 em outras palavras, desfaz alterações e deleções
 
 ### `git restore --staged`
