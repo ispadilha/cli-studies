@@ -42,6 +42,13 @@ para esta funcionalidade, atualmente pode se usar `git switch -c`
 
 ---
 
+## `git cherry-pick`
+pega um commit especificado por seu hash, e aplica no estado atual do projeto   
+geralmente é usado para aproveitar algum commit de outra branch, na branch atual    
+pode ser usado na própria branch, mas é raro, pode acontecer duplicação de código, exige cuidado e noção
+
+---
+
 ## `git clone`
 clona um repositório remoto existente para um diretório local, que será então um novo repositório local   
 por tratar-se de um clone de um repositório já existente, não é necessário inicializar como um repositório (`git init`) e nem especificar a origin (`git remote add origin`), pois estes passos já virão prontamente configurados
