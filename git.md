@@ -1,6 +1,6 @@
 # Comandos de terminal Git
 
-Lembrar que vários comandos podem ser substituídos por funcionalidades de IDEs, mas é importante conhecer e praticar os comandos em si
+Lembrar que vários comandos podem ser substituídos por funcionalidades de IDEs, mas é importante conhecer e praticar os comandos em si.
 
 ---
 
@@ -132,10 +132,19 @@ o comando cria um tipo de commit especial, mostrando o ponto onde os históricos
 tipicamente, usa-se `git push -u origin main` para associar a branch padrão "main" à origin previamente configurada  
 feita esta associação, pode-se economizar tempo posteriormente ao usar `git pull` e `git push`, pois não será necessário especificar a branch toda vez
 
+### `git push --tags`
+"empurra" todas as tags do projeto    
+usa-se devido ao fato de que, por padrão, o `git push` não envia tags     
+para empurrar uma tag específica, usa-se apenas o nome da tag, precedido do comando e do apelido do repositório remoto
+
 ### `git push origin :`
-excepcionalmente, não tem a ver (apenas) com "empurrar" alterações
+não tem tanto a ver (apenas) com "empurrar" alterações  
 esses dois pontos são seguidos do nome de uma branch que se deseja deletar no repositório remoto    
 é bom lembrar que "origin" é um apelido padrão para repositório remoto, usado por convenção, e não obrigatório
+
+### `git push --delete`
+outro comando derivado do `git push` que não tem tanto a ver apenas com empurrar alterações     
+é usado junto com o nome de um repositório remoto, e o nome de uma tag recentemente deletada do repositório local, para "empurrar a deleção" desta tag  
 
 ---
 
@@ -215,6 +224,7 @@ usado para tirar arquivos do controle de versão, sem deletar do disco
 
 ## `git show`
 é usado seguido do hash de um commit, para mostrar todas as alterações feitas no mesmo  
+também funciona seguido do nome de uma tag  
 é semelhante ao `git log -p`, mas funciona para um commit específico, não para o log todo
 
 ---
@@ -265,3 +275,30 @@ cria uma nova branch e já muda para ela
 ### `git switch -f`
 "force"     
 força a troca de branch, sobrescrevendo alterações locais
+
+---
+
+## `git tag`
+cria uma tag, ou seja, uma marcação para um ponto específico no histórico do repositório    
+geralmente usa-se para marcar versões funcionais e importantes do projeto   
+quando o comando é usado assim, puro, sem especificar um nome para poder fazer uma marcação, em vez disso ele lista as tags já existentes  
+quando o comando é seguido de um nome e depois do hash de um commit, ele cria a marcação para o referido commit     
+ao omitir o hash, por padrão, é criada uma marcação para a HEAD (estado atual)     
+é interessante notar que é possível usar o comando `git show` com um nome de tag, além de hashes
+
+### `git tag -a -m`
+"annotated", "message"  
+cria uma tag com "anotações" (em metadados) como autoria e data, e uma mensagem além do nome da tag   
+é possível também assinar uma tag "annotated" com GPG
+
+### `git tag -d`
+"delete"    
+deleta uma tag do repositório local     
+lembrando que após isso, para deletar do repositório remoto, é necessário "empurrar a deleção" com `git push --delete`
+
+### `git tag -v`
+"verify"    
+verifica anotações associadas à tag, como hash, tipo, autoria, mensagem, etc  
+por esse motivo, não funciona com tags que não sejam "annotated"
+
+_Sabendo que git e github não são a mesma coisa, é interessante saber que: ao criar e empurrar uma tag para o repositório remoto no github, a página do repositório mostrará as tags ao lado direito, junto a "Releases". Isso não é já um lançamento (release) por si só, mas é boa parte do caminho para isso, de forma facilitada._
