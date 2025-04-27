@@ -9,6 +9,11 @@ adiciona arquivos ao "stage", para serem submetidos a um commit
 
 ---
 
+## `git blame`
+mostra a autoria das alterações (sincronizadas) mais recentes, juntamente com o hash do referido commit, em cada linha de um arquivo especificado
+
+---
+
 ## `git branch`
 exibe uma lista com as branches presentes no repositório atual
 
