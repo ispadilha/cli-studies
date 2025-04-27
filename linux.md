@@ -1,6 +1,6 @@
 # Comandos de terminal Linux
 
-Lista feita e estudada em Ubuntu, talvez separe em novas listas por distros, futuramente
+Lista feita e estudada em Ubuntu. Talvez eu separe em novas listas por distros, futuramente.
 
 ---
 
