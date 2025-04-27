@@ -1,6 +1,6 @@
 # Comandos de terminal Git
 
-Lembrar que vários comandos podem ser substituídos por funcionalidades de IDEs, mas é importante conhecer e praticar os comandos em si.
+_Lembrar que vários comandos podem ser substituídos por funcionalidades de IDEs, mas é importante conhecer e praticar os comandos em si._
 
 ---
 
@@ -10,7 +10,7 @@ adiciona arquivos ao "stage", para serem submetidos a um commit
 ---
 
 ## `git branch`
-administra "branches" em um repositório git
+exibe uma lista com as branches presentes no repositório atual
 
 ### `git branch -d`
 deleta uma determinada branch do repositório local  
@@ -21,6 +21,9 @@ deleta uma determinada branch do repositório local
 "move" (renomeia) o nome da branch atual para um novo nome especificado     
 historicamente, a branch padrão criada juntamente com o repositório era chamada "master"    
 atualmente, é uma boa prática renomear para "main"
+
+### `git branch --show-current`
+mostra a branch atualmente selecionada
 
 ---
 
@@ -89,7 +92,8 @@ converte o diretório atual em um repositório git
 ---
 
 ## `git log`
-exibe um log com todos os commits na branch atual do repositório
+exibe um log com todos os commits na branch atual do repositório, por padrão    
+se o comando for seguido do nome de outra branch, exibe os commits da mesma
 
 ### `git log --all`
 exibe um log com os commits de todas as branches
