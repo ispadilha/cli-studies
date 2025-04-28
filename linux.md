@@ -88,6 +88,10 @@ usa-se seguido do devido PID (process ID), que pode ser consultado com o comando
 faz um determinado processo parar   
 é possível retomar a execução depois, dependendo do processo
 
+### `kill -CONT`
+"continue"  
+retoma a execução de um processo que foi parado com `kill -STOP`, se possível
+
 ### `kill -9`
 mata um processo de forma abrupta   
 com isso, o processo não tem tempo de salvar informações, liberar memória, etc      
