@@ -146,6 +146,30 @@ caso não seja especificado outro diretório, renomeia no diretório atual
 
 ---
 
+## `nslookup`
+"name server lookup"    
+usado para consultar DNS, ou seja, obter informações sobre nomes de domínio e endereços IP  
+o comando pode ser seguido de um domínio ou um endereço IP: fornecendo um, retorna o outro  
+é possível especificar um servidor DNS para uso, entre o comando e o domínio ou endereço    
+ao ser usado puro, o comando inicia um modo interativo, que aceita inputs como os seguintes:     
+
+### `set type=A`
+registros de endereço IPv4
+
+### `set type=AAAA`
+registros de endereço IPv6
+
+### `set type=MX`
+servidores de e-mail
+
+### `set type=NS`
+servidores DNS autoritativos
+
+### `set type=TXT`
+registros de texto
+
+---
+
 ## `pkill`
 "process kill"  
 semelhante ao `kill`, mas se especifica o nome do processo, ao invés de seu PID
