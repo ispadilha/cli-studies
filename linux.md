@@ -72,14 +72,6 @@ exibe o histórico de comandos executados no terminal
 
 ---
 
-## `htop`
-"human-friendly top processes"    
-semelhante ao comando `top`, lista os processos no "topo" de uso dos recursos do sistema   
-é uma versão "modernizada" ou mais "amigável" quanto a sua interface gráfica    
-ao contrário do `top`, no entanto, nem sempre vem instalado com a distro, mas sua instalação é fácil e geralmente está nos repositórios oficiais 
-
----
-
 ## `kill`
 como o nome sugere, "mata" (encerra imediatamente) um processo  
 usa-se seguido do devido PID (process ID), que pode ser consultado com o comando `ps aux` por exemplo
