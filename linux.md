@@ -162,6 +162,14 @@ registros de texto
 
 ---
 
+## `openssl`
+ssl vem de "secure sockets layer", que foi um protocolo de segurança criado para criptografar a comunicação entre computadores na internet  
+hoje, o ssl está obsoleto e o protocolo usado (inclusive por este comando) é o TLS: "transport layer security", mas o nome "openssl" se mantém por razões históricas e de compatibilidade   
+o comando trabalha com criptografia, de várias formas possíveis   
+criptografar arquivos, gerar e verificar chaves e certificados, verificar conexão criptografada, são algumas das possibilidades
+
+---
+
 ## `pkill`
 "process kill"  
 semelhante ao `kill`, mas se especifica o nome do processo, ao invés de seu PID
