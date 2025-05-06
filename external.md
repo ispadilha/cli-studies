@@ -23,6 +23,11 @@ faz login, e consequentemente autentica, um usuário com sua conta do github
 faz logout da conta do github que estiver autenticada   
 é bom lembrar que isto foi útil (e necessário) quando, ao mudar a senha do github, a autenticação guardada no sistema "quebrou"
 
+### `gh auth status`
+exibe informações sobre a autenticação atual    
+é importante se atentar a questões de segurança, como tokens guardados fora de keyring (nesse caso seriam legíveis) ou chaves SSH sem senha     
+os dois casos acima são problemáticos se a máquina for comprometida
+
 ---
 
 ## `htop`
