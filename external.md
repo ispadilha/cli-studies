@@ -4,6 +4,27 @@ _Estes programas não vêm instalados juntamente ao SO e isso precisa ser feito 
 
 ---
 
+# `gh`
+"github"    
+interface de linha de comando para o github  
+permite criar e gerenciar repositórios, pull requests, issues, releases, gists, etc   
+integra-se com o git e pode ser usado em qualquer repositório git
+
+---
+
+## `gh auth`
+"authenticate"  
+lida com autenticação de conta no github
+
+### `gh auth login`
+faz login, e consequentemente autentica, um usuário com sua conta do github
+
+### `gh auth logout`
+faz logout da conta do github que estiver autenticada   
+é bom lembrar que isto foi útil (e necessário) quando, ao mudar a senha do github, a autenticação guardada no sistema "quebrou"
+
+---
+
 ## `htop`
 "human-friendly top processes"    
 semelhante ao comando `top` nativo, lista os processos no "topo" de uso dos recursos do sistema   
