@@ -156,3 +156,21 @@ pára containers em execução
 ### `docker stop -t`
 "time"  
 define quantos segundos esperar, antes de forçar o encerramento (o padrão é 10)
+
+---
+
+## `docker system`
+gerencia o estado geral do docker no sistema
+
+### `docker system df`
+"disk free"     
+mostra o uso de disco por imagens, containers, volumes e caches
+
+### `docker system events`
+exibe eventos do Docker em tempo real (logs do daemon)
+
+### `docker system info`
+mostra informações gerais do sistema Docker (versão, número de containers, drivers, etc.)
+
+### `docker system prune`
+"poda" tudo que não está sendo usado (containers, imagens, redes, volumes)
