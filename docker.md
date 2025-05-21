@@ -4,6 +4,36 @@ _Os comandos são uma parte da utilização da tecnologia, é preciso estudar ta
 
 ---
 
+## `docker exec`
+"execute"    
+executa comandos dentro de containers em execução
+
+### `docker exec -it`
+"interactive"   
+abre um terminal interativo dentro do container
+
+### `docker exec -d`
+"detached"   
+executa o comando em background
+
+---
+
+## `docker image`
+gerencia imagens docker
+
+### `docker image ls`
+"list"  
+lista as imagens disponíveis localmente
+
+### `docker image rm`
+"remove"  
+remove uma imagem docker
+
+### `docker image pull`
+faz download de uma imagem docker do docker hub, ou outro registry configurado
+
+---
+
 ## `docker ps`
 "process status"    
 inspirado no comando `ps` em linux/unix     
@@ -51,6 +81,21 @@ remove o container automaticamente, após ele parar
 ### `docker run -v`
 "volumes"   
 faz mapeamento de volumes no container
+
+---
+
+## `docker start`
+inicia um container que esteja parado
+
+### `docker start -a`
+"attach"    
+anexa o terminal do container ao atual, mostrando sua saída padrão  
+caso seja usado sozinho, não aceita entrada, por isso é comumente usado junto com `docker start -i`
+
+### `docker start -i`
+"interactive"   
+direciona a entrada padrão ao terminal do container     
+caso seja usado sozinho, não exibirá saída, por isso é comumente usado junto com `docker start -a`
 
 ---
 
