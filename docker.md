@@ -4,6 +4,57 @@ _Os comandos são uma parte da utilização da tecnologia, é preciso estudar ta
 
 ---
 
+## `docker build`
+cria uma nova imagem docker a partir de um Dockerfile presente no diretório atual
+
+### `docker build -f`
+"file"  
+cria uma nova imagem docker a partir de um Dockerfile presente no caminho especificado após a opção
+
+### `docker build -t`
+"tag"    
+define uma tag para a imagem docker que será criada
+
+---
+
+## `docker container`
+gerencia containers já existentes   
+a maioria dos comandos tem efeitos iguais a outros comandos mais curtos
+
+### `docker container inspect`
+mostra detalhes do container
+
+### `docker container logs`
+mostra logs do container
+
+### `docker container ls`
+"list"  
+lista os containers ativos
+
+### `docker container ls -a`
+"list all"  
+lista todos os containers, inclusive os que estiverem parados
+
+### `docker container prune`
+"poda"    
+remove todos os containers parados, após uma pergunta de confirmação
+
+### `docker container prune -f`
+"poda forçada"  
+remove todos os containers parados sem perguntar por confirmação
+
+### `docker container rm`
+"remove"  
+remove um container
+
+### `docker container start`
+inicia um container parado
+
+### `docker container stop`
+pára um container em execução
+
+---
+
 ## `docker exec`
 "execute"    
 executa comandos dentro de containers em execução
