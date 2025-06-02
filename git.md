@@ -68,7 +68,7 @@ a princípio ocorre no repositório local, e depois precisa ser sincronizado com
 para poder realizar o commit, é necessária uma "mensagem", um pequeno texto que registra ou descreve as alterações referentes ao commit, a qual é inserida após esta opção  
 é possível pular duas linhas e depois escrever "Co-authored-by:" seguido de nome e e-mail, antes de fechar aspas, para especificar co-autoria
 
-### `git commit --ammend`
+### `git commit --amend`
 permite fazer alterações no último commit feito, como alterar a mensagem ou adicionar arquivos esquecidos
 
 ---
