@@ -101,6 +101,11 @@ sendo assim, é útil em scripts ou comandos encadeados
 
 ---
 
+## `docker restart`
+reinicia um container, cujo nome é especificado após o comando
+
+---
+
 ## `docker run`
 cria e inicia um novo container a partir de uma imagem  
 é capaz de, inclusive, baixar a imagem se ainda não estiver presente    
