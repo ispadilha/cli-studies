@@ -61,7 +61,11 @@ executa comandos dentro de containers em execução
 
 ### `docker exec -it`
 "interactive"   
-abre um terminal interativo dentro do container
+mantém a entrada padrão (STDIN) aberta   
+"tty"   
+cria um terminal virtual   
+estas duas flags são quase sempre usadas juntas   
+na prática, o comando faz o terminal "entrar" no container
 
 ### `docker exec -d`
 "detached"   
