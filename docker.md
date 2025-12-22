@@ -15,6 +15,42 @@ cria uma nova imagem docker a partir de um Dockerfile presente no caminho especi
 "tag"    
 define uma tag para a imagem docker que será criada
 
+### `docker build --no-cache`
+"sem cache"   
+desativa o uso de cache durante o build da imagem   
+normalmente, para cada instrução no Dockerfile, o docker tenta reutilizar camadas já construídas, neste caso isso é desativado   
+isso deixa o processo mais lento, mas é útil ao depurar problemas
+
+> docker build -t \<container> . --no-cache
+
+---
+
+## `docker compose`
+gerencia aplicações multi-container definidas em um arquivo docker-compose.yml
+
+### `docker compose up`
+inicia os serviços definidos no arquivo docker-compose.yml
+
+### `docker compose up -d`
+"detached"  
+inicia os serviços em background
+
+### `docker compose down`
+pára e remove os containers, redes e volumes criados pelo compose
+
+### `docker compose build`
+constrói ou reconstrói as imagens dos serviços
+
+### `docker compose logs`
+mostra os logs dos serviços
+
+### `docker compose ps`
+lista os containers dos serviços em execução
+
+### `docker compose -f`
+"file"  
+especifica um arquivo compose diferente do padrão (docker-compose.yml)
+
 ---
 
 ## `docker container`
@@ -55,6 +91,15 @@ pára um container em execução
 
 ---
 
+## `docker cp`
+copia arquivos entre o host e o container
+
+> docker cp \<container>:/caminho/no/container /caminho/no/host
+>
+> docker cp /caminho/no/host \<container>:/caminho/no/container
+
+---
+
 ## `docker exec`
 "execute"    
 executa comandos dentro de containers em execução
@@ -64,8 +109,10 @@ executa comandos dentro de containers em execução
 mantém a entrada padrão (STDIN) aberta   
 "tty"   
 cria um terminal virtual   
-estas duas flags são quase sempre usadas juntas   
-na prática, o comando faz o terminal "entrar" no container
+estas duas flags são quase sempre usadas juntas, e ao final do comando especifica-se um terminal (por exemplo, bash)   
+na prática, o comando "faz o terminal entrar no container"
+
+> docker exec -it \<container> /bin/bash
 
 ### `docker exec -d`
 "detached"   
@@ -105,8 +152,18 @@ sendo assim, é útil em scripts ou comandos encadeados
 
 ---
 
+## `docker push`
+"empurra" uma imagem local para o docker hub ou outro registry remoto configurado   
+requer que a imagem esteja corretamente etiquetada ("tagueada") e que o usuário esteja autenticado no registry
+
+> docker push \<container>
+
+---
+
 ## `docker restart`
-reinicia um container, cujo nome é especificado após o comando
+reinicia um container
+
+> docker restart \<container>
 
 ---
 
