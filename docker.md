@@ -21,7 +21,7 @@ desativa o uso de cache durante o build da imagem
 normalmente, para cada instrução no Dockerfile, o docker tenta reutilizar camadas já construídas, neste caso isso é desativado   
 isso deixa o processo mais lento, mas é útil ao depurar problemas
 
-> docker build -t \<container> . --no-cache
+```docker build -t <container> . --no-cache```
 
 ---
 
@@ -94,9 +94,8 @@ pára um container em execução
 ## `docker cp`
 copia arquivos entre o host e o container
 
-> docker cp \<container>:/caminho/no/container /caminho/no/host
->
-> docker cp /caminho/no/host \<container>:/caminho/no/container
+```docker cp <container>:/caminho/no/container /caminho/no/host```  
+```docker cp /caminho/no/host <container>:/caminho/no/container```
 
 ---
 
@@ -112,7 +111,7 @@ cria um terminal virtual
 estas duas flags são quase sempre usadas juntas, e ao final do comando especifica-se um terminal (por exemplo, bash)   
 na prática, o comando "faz o terminal entrar no container"
 
-> docker exec -it \<container> /bin/bash
+```docker exec -it <container> /bin/bash```
 
 ### `docker exec -d`
 "detached"   
@@ -156,14 +155,14 @@ sendo assim, é útil em scripts ou comandos encadeados
 "empurra" uma imagem local para o docker hub ou outro registry remoto configurado   
 requer que a imagem esteja corretamente etiquetada ("tagueada") e que o usuário esteja autenticado no registry
 
-> docker push \<container>
+```docker push <container>```
 
 ---
 
 ## `docker restart`
 reinicia um container
 
-> docker restart \<container>
+```docker restart <container>```
 
 ---
 
