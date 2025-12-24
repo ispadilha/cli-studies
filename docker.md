@@ -135,6 +135,17 @@ faz download de uma imagem docker do docker hub, ou outro registry configurado
 
 ---
 
+## `docker logs`
+exibe os logs de um container
+
+### `docker logs -f`
+"follow"  
+segue os logs em tempo real, atualizando conforme novos logs são gerados
+
+```docker logs -f exemplo.api```
+
+---
+
 ## `docker ps`
 "process status"    
 inspirado no comando `ps` em linux/unix     
