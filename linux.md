@@ -284,3 +284,8 @@ cria um novo arquivo com o nome especificado
 semelhante a `kill` e `pkill`, também se destina a matar processos, porém é usado em ambiente gráfico   
 após se emitir o comando, deve-se clicar na janela do referido processo     
 portanto, ela precisa estar vísivel
+
+---
+
+## `xman`
+mostra as páginas do `man` no X Window System (X11)
