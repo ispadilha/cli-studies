@@ -36,6 +36,19 @@ limpa o terminal
 
 ---
 
+## `cmp`
+"compare"  
+compara dois arquivos byte a byte  
+é usado para verificar se dois arquivos (binários ou de texto) são idênticos  
+quando usado sem flag: não produz saída se forem idênticos, ou informa a posição do primeiro byte diferente
+
+### `cmp -l`
+"long"  
+lista todas as diferenças encontradas  
+cada linha da saída mostra: a posição (byte), o valor do byte no primeiro arquivo, o valor do byte no segundo arquivo
+
+---
+
 ## `cp`  
 "copy"  
 copia arquivos e diretórios
@@ -267,6 +280,20 @@ exibe as "n" últimas linhas de um arquivo, em número especificado
 
 ---
 
+## `tee`
+nome inspirado em uma peça com formato em "T"  
+pode ler da entrada padrão (stdin) mas é mais comum que seja usado em pipelines  
+escreve simultaneamente na saída padrão (stdout), e em um ou mais arquivos  
+é usado quando se quer salvar a saída de um comando, sem deixar de exibi-la no terminal  
+
+### `tee -a`
+"append"  
+acrescenta a saída ao final do arquivo, ao invés de sobrescrevê-lo
+
+```cmp -l file1 file2 | tee cmp_file.txt```
+
+---
+
 ## `top`
 "top processes"     
 lista os processos que mais consomem recursos no momento, como processamento e memória  
@@ -277,6 +304,24 @@ possui uma versão modernizada, o `htop`
 
 ## `touch`  
 cria um novo arquivo com o nome especificado
+
+---
+
+## `wc`
+"word count"  
+conta linhas, palavras, bytes, caracteres, de um arquivo ou da entrada padrão
+
+### `wc -l`
+"lines"  
+conta apenas o número de linhas
+
+### `wc -w`
+"words"  
+conta palavras
+
+### `wc -c`
+"characters"  
+conta caracteres/bytes
 
 ---
 
